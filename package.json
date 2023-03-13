@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^8.0.0"
+  },
+  "name": "clear",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

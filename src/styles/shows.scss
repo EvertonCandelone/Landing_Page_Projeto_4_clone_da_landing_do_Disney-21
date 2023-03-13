@@ -1,0 +1,69 @@
+@use 'variavel';
+
+.shows {
+    padding: 2vw 5.6vw;
+    background-color: variavel.$ColorBackground;
+
+        &__list {
+            list-style-type: none;
+            padding-top: 4rem;
+            display: none;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            &--is-active {
+                display: grid;
+            }
+
+            &__item {
+                color: variavel.$colorTextTertiary;
+                font-size: 14px;
+                h3 {
+                    padding-top: 8px;
+                    font-weight: 700;
+                }
+
+                h4 {
+                    color: variavel.$colorTextMain;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 8px 0;
+                }
+                
+                img {
+                    max-width: 100%;
+                    border-radius: 8px;
+                    cursor: pointer;  
+                }
+            }
+        }
+
+    &__tabs {
+        border: none;
+        border-bottom: solid variavel.$colorTextTertiary;
+        border-width: thin;
+
+        &__button {
+            cursor: pointer;
+            padding-bottom: 13px;
+            padding: 8px 20px;
+            color: variavel.$colorTextTertiary;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            background-color: transparent;
+
+            &--is-active {
+                border-bottom: 3px solid rgba(2, 129, 97, 0.856);
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

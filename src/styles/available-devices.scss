@@ -1,0 +1,36 @@
+@use 'variavel';
+
+.available-devices {
+    padding: 5.6vw;
+    background-color: variavel.$ColorBackground;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        gap: 24px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            text-align: center;
+            h4 {
+                margin-bottom: 24px;
+                margin-top: 20px;
+            }
+            li {
+                color: variavel.$colorTextMain;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

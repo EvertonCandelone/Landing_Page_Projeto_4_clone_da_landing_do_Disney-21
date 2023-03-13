@@ -1,0 +1,74 @@
+@use 'variavel';
+@use 'hero';
+@use 'shows';
+@use 'watch-anytime';
+@use 'footer';
+@use 'header';
+@use 'faq';
+@use 'available-devices';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: HCo Whitney SSm,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    list-style: none;
+
+} 
+
+body {
+    background-color: variavel.$ColorBackground;
+}
+
+
+.text--base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text--bg {
+    font-weight: 700;
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    color: variavel.$colorTextMain;
+
+}
+
+.text {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: variavel.$colorTextSecondary;
+}
+
+.text--sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.button {
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+
+.text1 {
+    font-weight: 500;
+    margin-top: 1.8rem;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0;
+    color: variavel.$colorTextTertiary;
+
+    
+    &__border {
+        border: solid;
+        border-width: 1px;
+        border-radius: 0.25rem;
+        padding: 1px 4px;
+
+    }
+}

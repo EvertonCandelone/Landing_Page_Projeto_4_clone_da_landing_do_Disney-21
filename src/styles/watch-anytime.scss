@@ -1,0 +1,23 @@
+@use 'variavel';
+
+
+.watch-anytime {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: variavel.$ColorBackground;
+
+    @media (max-width: 768px) {
+        display: block;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+    .logo {
+        max-width: 30%;
+        padding-top: 1.5rem;
+        padding-right: 1rem;
+    }
